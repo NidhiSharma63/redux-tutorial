@@ -31,7 +31,7 @@ const Todo = () => {
       <div className="show-todo">
         {
           todoList.map((todo)=>(
-            <div key={todo.id}>
+            <div key={todo.id} className="item">
               <p>{todo.value}</p>
               <button
                 onClick={()=>dispatch(removeToDo(todo.id))}>Delete</button>

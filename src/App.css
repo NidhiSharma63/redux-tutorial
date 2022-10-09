@@ -12,22 +12,54 @@ body{
   justify-content: space-between;
   flex-direction: column;
   gap: 3rem;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 input{
-  width: 20rem;
+  width: 15rem;
   height: 3rem;
   font-size: 1.6rem;
-  border: 2px solid rgba(18, 18, 18, 0.777);
-  margin-right: 3rem;
+  border: 1px solid rgba(18, 18, 18, 0.777);
+  margin-right: 2rem;
+  border-radius: .3rem;
+  padding-left: 1rem;
 }
 input:focus{
   outline: none;
-  border: 2px solid green;
+  border: 1px solid green;
 }
 button{
   font-size: 1.6rem;
-  height: 3rem;
   padding: .4rem 1.5rem;
   cursor: pointer;
+  background-color: rgb(13, 197, 13);
+  color: white;
+  border: none;
+  border-radius: .2rem;
+}
+.add-todo button:hover{
+  background-color: rgb(6, 170, 6);
+}
+.item{
+  width: 30rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.184);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  border-radius: .4rem;
+  gap: 4rem;
+  padding: 0rem 1rem;
+  margin-bottom: 1rem;  
+}
+.item p{
+  font-size: 1.6rem;
+}
+.item button{
+  font-size: 1rem;
+  padding: .4rem 1rem;
+  background-color: red;
+  color: white;
+}
+.item button:hover{
+  background-color: rgb(213, 0, 0);
 }
