@@ -56,10 +56,14 @@ const Todo = () => {
               <p>{todo.value}</p>
               <div>
                 <button
-                  onClick={()=>dispatch(removeToDo(todo.id))}>Delete
+                  className='deletebtn'
+                  onClick={()=>dispatch(removeToDo(todo.id))}
+                >Delete
                 </button>
                 <button
-                  onClick={()=>editHandler(todo)}>Edit
+                  className='editbtn'
+                  onClick={()=>editHandler(todo)}
+                >Edit
                 </button>
               </div>
             </div>
