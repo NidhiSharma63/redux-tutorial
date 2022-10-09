@@ -18,8 +18,6 @@ const todoSlice = createSlice({
       state.todoList = state.todoList
       .map((todo)=>{
         if(todo.id===action.payload.id){
-          console.log(todo.id);
-          console.log('action',action.payload.id)
           todo.value=action.payload.value
         }
         return todo;
