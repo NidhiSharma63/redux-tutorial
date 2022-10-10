@@ -5,8 +5,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Todo = () => {
 
-  const [taskValue, setTaskValue] = useState('');
   const todoList = useSelector(state=>state.todo.todoList);
+
+  const [taskValue, setTaskValue] = useState('');
   const dispatch = useDispatch();
   
   const handleSubmit = () =>{
@@ -14,11 +15,11 @@ const Todo = () => {
     setTaskValue('')
   };
 
-  const [editToDoObj,setTodoObj] = useState({});
+  const [editToDoObj,seteditTodoObj] = useState({});
   const [isEdit,setIsEdit] = useState(false);
 
   const editHandler = (taskobj) =>{
-    setTodoObj(taskobj);
+    seteditTodoObj(taskobj);
     setTaskValue(taskobj.value);
     setIsEdit(true);
   }
